@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 const app = express();
 
 app.use(express.static('public'));
@@ -6,14 +7,20 @@ app.use(express.static('public'));
 import fruitPackage from './util/fruitsUtil.js';
 console.log(fruitPackage.slogan, fruitPackage.fruits);
 
+const publicPath = path.resolve('public/');
+
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/frontpage/index.html');
+  res.sendFile(publicPath + '/frontpage/frontpage.html');
 });
 
 app.get('/fruits', (req, res) => {
-  res.sendFile(__dirname + '/public/fruits/fruits.html' );
+  res.sendFile(publicPath + '/fruits/fruits.html' );
 });
+
+app.get('/redirection', (req, res) => {
+  res.sendFile(publicPath + '/redirection/redirection.html')
+})
 
 let counter = 0;
 
