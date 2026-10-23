@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding: 1rem .5rem;
+  background-color: antiquewhite;
+  border-radius: .5rem;
+}
+
+nav img {
+  width: 4rem;
+  height: auto;
+}
+
+body {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

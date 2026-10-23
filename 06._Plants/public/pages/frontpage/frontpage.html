@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/plant.png"/>
+  <link rel="stylesheet" href="/assets/style/global.css"/>
+  <link rel="stylesheet" href="/pages/frontpage/frontpage.css"/>
+  <script src="/assets/scripts/setCopyrightYear.js" defer></script>
+  <script src="/assets/scripts/escapeHtml.js" defer></script>
+  <script src="/pages/frontpage/frontpage.js" defer></script>
+  <title>Planter</title>
+</head>
+
+<body>
+
+  <nav>
+    <a href="/">
+      <img id="nav-logo" src="/assets/images/plant.png" alt="logo"/>
+    </a>
+    <a href="/about">About</a>
+  </nav>
+
+  <main>
+    <h1>FRONTPAGE</h1>
+
+    <section id="plants-searchbar">
+
+      <label for="plant-list-input">Search</label>
+      <input id="plant-list-input" list="plants-list-data"/>
+
+      <datalist id="plants-list-data">
+      </datalist>
+
+      <button onclick="addPlant()">Add plant</button>
+
+    </section>
+
+    <section id="plant-container">
+      <!-- TODO: show the list of plants being taken care of -->
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-copyright"></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+h1 {
+  color: darkgreen;
+}
+
+.plant-image {
+  max-width: 200px;
+  height: auto;
+}
